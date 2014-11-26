@@ -11,13 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141012105938) do
+ActiveRecord::Schema.define(version: 20141110061243) do
 
   create_table "my_queues", id: false, force: true do |t|
     t.string   "job_id",      limit: 255,   null: false
     t.string   "title",       limit: 255
     t.text     "desc",        limit: 65535
     t.datetime "enqueued_at",               null: false
+  end
+
+  create_table "worker_names", id: false, force: true do |t|
+    t.string   "job_id",      limit: 255, null: false
+    t.string   "title",       limit: 255
+    t.datetime "enqueued_at",             null: false
   end
 
 end
