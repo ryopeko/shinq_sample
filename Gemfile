@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.0.beta4'
+gem 'rails', '4.2.0.rc2'
 gem 'mysql2'
 gem 'sass-rails', '5.0.0.beta1'
 gem 'uglifier', '>= 1.5.0'
@@ -15,7 +15,7 @@ gem 'bcrypt'
 
 gem 'kaminari'
 
-gem 'activejob', '4.2.0.beta4'
+gem 'activejob', '4.2.0.rc2'
 gem 'shinq', path: '/Users/sekiguchi.ryoichi/dev/src/github.com/ryopeko/shinq'
 
 group :development do
